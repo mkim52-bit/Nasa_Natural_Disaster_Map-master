@@ -67,15 +67,15 @@ def api(request):
                     if category in mySet:
                          folium.PolyLine(
                          coord_list,
-                         color="green",
+                         color="blue",
                          popup=(title, date_range),
                          tooltip=title,
                          ).add_to(group)
                          folium.RegularPolygonMarker(
                          location=i["geometry"][len(i["geometry"]) - 1]["coordinates"],
-                         fill_color="green",
+                         fill_color="blue",
                          icon=folium.Icon(icon='chevron-up', prefix='fa'),
-                         color="green",
+                         color="blue",
                          number_of_sides=3,
                          radius=6,
                          rotation=rotate ,
@@ -92,14 +92,14 @@ def api(request):
 
                          folium.PolyLine(
                          coord_list,
-                         color="green",
+                         color="blue",
                          popup=(title, date_range),
                          tooltip=title,
                          ).add_to(group)
                          folium.RegularPolygonMarker(
                          location=i["geometry"][len(i["geometry"]) - 1]["coordinates"],
-                         fill_color="green",
-                         color="green",
+                         fill_color="blue",
+                         color="blue",
                          number_of_sides=3,
                          radius=6,
                          rotation=rotate, 
