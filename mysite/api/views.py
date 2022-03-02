@@ -47,7 +47,7 @@ def api(request):
                     rotate = triangle_rotation(
                     i["geometry"][len(i["geometry"]) - 2]["coordinates"],
                     i["geometry"][len(i["geometry"]) - 1]["coordinates"],
-                    )
+                    ) - 270
 
                     # iterate through geometry array that contains wanted coordinates
                     counter = 1
